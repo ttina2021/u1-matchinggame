@@ -32,7 +32,7 @@ tilesOnBoardEl.forEach((board) => {
 
 // 2) Player clicks first tile => stays open-faced
 function flippedTile(evt){
-    const player1 = evt.target.id === ""
+    const player = evt.target.id === ""
 }
 
 // => if no second click, first tile flips back over

@@ -1,4 +1,4 @@
-/* html {
+html {
     box-sizing: border-box;
 }
 
@@ -14,11 +14,14 @@
 }
 
 body {
+    
     background-color: lightblue;
     align-items: center;
     display: flex;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+
 
 h1 {
     background-color: lightgrey;
@@ -26,6 +29,7 @@ h1 {
     font-weight: 700;
     margin: 3rem 0;
     padding: 2.5rem;
+    flex-direction: column;
 }
 
 button > new-game-button {
@@ -33,7 +37,7 @@ button > new-game-button {
     font-size: 2.4rem;
     font-weight: 600;
     margin: 1.2rem;
-    
+    display: center;
 }
 
 button > light-dark-button {
@@ -41,4 +45,37 @@ button > light-dark-button {
     font-size: 2.4rem;
     font-weight: 600;
     margin: 1.2rem;
+}
+
+img {
+    width: 100px;
+}
+
+
+.tile-container {
+    width: 750px; 
+    height: 550px;
+    background: none;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+
+/* front-face,
+back-face {
+    position: absolute;
+    border: 2px solid darkorange;
 } */
+
+.row1 {
+    background-color: lightpink;
+    flex: none;
+}
+
+.row2 {
+    background-color: lightyellow;
+}
+
+.row3 {
+    background-color: lightseagreen
+}
